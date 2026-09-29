@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="layout">
+    <main class="products">
+      <h1 class="products__title">Desserts</h1>
+      <ul class="products__grid">
+        <li class="card">
+          <div class="card__media">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="./assets/images/image-waffle-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/image-waffle-tablet.jpg">
+              <img class="card__image" src="./assets/images/image-waffle-mobile.jpg" alt="Waffle with Berries">
+            </picture>
+            <div class="card__action">
+            <button class="btn-add" type="button">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" width="21" height="20">
+              Add to Cart
+            </button>
+            </div>
+          </div>
+          <p class="card__category">Waffle</p>
+          <h2 class="card__name">Waffle with Berries</h2>
+          <p class="card__price">$6.50</p>
+        </li>
+        <li class="card is-selected">
+          <div class="card__media">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="./assets/images/image-creme-brulee-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/image-creme-brulee-tablet.jpg">
+              <img class="card__image" src="./assets/images/image-creme-brulee-mobile.jpg" alt="Vanilla Bean Crème Brûlée">
+            </picture>
+            <div class="card__action">
+            <div class="qty">
+              <button class="qty__btn" type="button" aria-label="Decrease quantity of Vanilla Bean Crème Brûlée"><img src="./assets/images/icon-decrement-quantity.svg" alt="" width="10" height="2"></button>
+              <span>4</span>
+              <button class="qty__btn" type="button" aria-label="Increase quantity of Vanilla Bean Crème Brûlée"><img src="./assets/images/icon-increment-quantity.svg" alt="" width="10" height="10"></button>
+            </div>
+            </div>
+          </div>
+          <p class="card__category">Crème Brûlée</p>
+          <h2 class="card__name">Vanilla Bean Crème Brûlée</h2>
+          <p class="card__price">$7.00</p>
+        </li>
+        <li class="card">
+          <div class="card__media">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="./assets/images/image-macaron-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/image-macaron-tablet.jpg">
+              <img class="card__image" src="./assets/images/image-macaron-mobile.jpg" alt="Macaron Mix of Five">
+            </picture>
+            <div class="card__action">
+            <button class="btn-add" type="button">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" width="21" height="20">
+              Add to Cart
+            </button>
+            </div>
+          </div>
+          <p class="card__category">Macaron</p>
+          <h2 class="card__name">Macaron Mix of Five</h2>
+          <p class="card__price">$8.00</p>
+        </li>
+        <li class="card is-selected">
+          <div class="card__media">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="./assets/images/image-tiramisu-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/image-tiramisu-tablet.jpg">
+              <img class="card__image" src="./assets/images/image-tiramisu-mobile.jpg" alt="Classic Tiramisu">
+            </picture>
+            <div class="card__action">
+            <div class="qty">
+              <button class="qty__btn" type="button" aria-label="Decrease quantity of Classic Tiramisu"><img src="./assets/images/icon-decrement-quantity.svg" alt="" width="10" height="2"></button>
+              <span>1</span>
+              <button class="qty__btn" type="button" aria-label="Increase quantity of Classic Tiramisu"><img src="./assets/images/icon-increment-quantity.svg" alt="" width="10" height="10"></button>
+            </div>
+            </div>
+          </div>
+          <p class="card__category">Tiramisu</p>
+          <h2 class="card__name">Classic Tiramisu</h2>
+          <p class="card__price">$5.50</p>
+        </li>
+        <li class="card">
+          <div class="card__media">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="./assets/images/image-baklava-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/image-baklava-tablet.jpg">
+              <img class="card__image" src="./assets/images/image-baklava-mobile.jpg" alt="Pistachio Baklava">
+            </picture>
+            <div class="card__action">
+            <button class="btn-add" type="button">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" width="21" height="20">
+              Add to Cart
+            </button>
+            </div>
+          </div>
+          <p class="card__category">Baklava</p>
+          <h2 class="card__name">Pistachio Baklava</h2>
+          <p class="card__price">$4.00</p>
+        </li>
+        <li class="card">
+          <div class="card__media">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="./assets/images/image-meringue-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/image-meringue-tablet.jpg">
+              <img class="card__image" src="./assets/images/image-meringue-mobile.jpg" alt="Lemon Meringue Pie">
+            </picture>
+            <div class="card__action">
+            <button class="btn-add" type="button">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" width="21" height="20">
+              Add to Cart
+            </button>
+            </div>
+          </div>
+          <p class="card__category">Pie</p>
+          <h2 class="card__name">Lemon Meringue Pie</h2>
+          <p class="card__price">$5.00</p>
+        </li>
+        <li class="card">
+          <div class="card__media">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="./assets/images/image-cake-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/image-cake-tablet.jpg">
+              <img class="card__image" src="./assets/images/image-cake-mobile.jpg" alt="Red Velvet Cake">
+            </picture>
+            <div class="card__action">
+            <button class="btn-add" type="button">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" width="21" height="20">
+              Add to Cart
+            </button>
+            </div>
+          </div>
+          <p class="card__category">Cake</p>
+          <h2 class="card__name">Red Velvet Cake</h2>
+          <p class="card__price">$4.50</p>
+        </li>
+        <li class="card">
+          <div class="card__media">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="./assets/images/image-brownie-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/image-brownie-tablet.jpg">
+              <img class="card__image" src="./assets/images/image-brownie-mobile.jpg" alt="Salted Caramel Brownie">
+            </picture>
+            <div class="card__action">
+            <button class="btn-add" type="button">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="" width="21" height="20">
+              Add to Cart
+            </button>
+            </div>
+          </div>
+          <p class="card__category">Brownie</p>
+          <h2 class="card__name">Salted Caramel Brownie</h2>
+          <p class="card__price">$4.50</p>
+        </li>
+        <li class="card is-selected">
+          <div class="card__media">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="./assets/images/image-panna-cotta-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/image-panna-cotta-tablet.jpg">
+              <img class="card__image" src="./assets/images/image-panna-cotta-mobile.jpg" alt="Vanilla Panna Cotta">
+            </picture>
+            <div class="card__action">
+            <div class="qty">
+              <button class="qty__btn" type="button" aria-label="Decrease quantity of Vanilla Panna Cotta"><img src="./assets/images/icon-decrement-quantity.svg" alt="" width="10" height="2"></button>
+              <span>2</span>
+              <button class="qty__btn" type="button" aria-label="Increase quantity of Vanilla Panna Cotta"><img src="./assets/images/icon-increment-quantity.svg" alt="" width="10" height="10"></button>
+            </div>
+            </div>
+          </div>
+          <p class="card__category">Panna Cotta</p>
+          <h2 class="card__name">Vanilla Panna Cotta</h2>
+          <p class="card__price">$6.50</p>
+        </li>
+      </ul>
+    </main>
+
+    <aside class="cart" aria-labelledby="cart-title">
+      <h2 class="cart__title" id="cart-title">Your Cart (7)</h2>
+
+      <ul class="cart__list">
+          <li class="cart-item">
+            <div>
+              <h3 class="cart-item__name">Classic Tiramisu</h3>
+              <p class="cart-item__meta"><span class="cart-item__qty">1x</span> <span class="cart-item__unit">@ $5.50</span> <span class="cart-item__subtotal">$5.50</span></p>
+            </div>
+            <button class="cart-item__remove" type="button" aria-label="Remove Classic Tiramisu from cart"><img src="./assets/images/icon-remove-item.svg" alt="" width="10" height="10"></button>
+          </li>
+          <li class="cart-item">
+            <div>
+              <h3 class="cart-item__name">Vanilla Bean Crème Brûlée</h3>
+              <p class="cart-item__meta"><span class="cart-item__qty">4x</span> <span class="cart-item__unit">@ $7.00</span> <span class="cart-item__subtotal">$28.00</span></p>
+            </div>
+            <button class="cart-item__remove" type="button" aria-label="Remove Vanilla Bean Crème Brûlée from cart"><img src="./assets/images/icon-remove-item.svg" alt="" width="10" height="10"></button>
+          </li>
+          <li class="cart-item">
+            <div>
+              <h3 class="cart-item__name">Vanilla Panna Cotta</h3>
+              <p class="cart-item__meta"><span class="cart-item__qty">2x</span> <span class="cart-item__unit">@ $6.50</span> <span class="cart-item__subtotal">$13.00</span></p>
+            </div>
+            <button class="cart-item__remove" type="button" aria-label="Remove Vanilla Panna Cotta from cart"><img src="./assets/images/icon-remove-item.svg" alt="" width="10" height="10"></button>
+          </li>
+      </ul>
+
+      <div class="cart__total">
+        <span>Order Total</span>
+        <strong>$46.50</strong>
+      </div>
+
+      <p class="cart__delivery">
+        <img src="./assets/images/icon-carbon-neutral.svg" alt="" width="21" height="20">
+        <span>This is a <strong>carbon-neutral</strong> delivery</span>
+      </p>
+
+      <a class="btn btn--primary" href="#order-confirmed">Confirm Order</a>
+    </aside>
+  </div>
+
+  <!-- Order confirmation modal (opens with CSS :target, no JavaScript) -->
+  <div class="modal" id="order-confirmed" role="dialog" aria-labelledby="modal-title">
+    <a class="modal__backdrop" href="#" aria-label="Close"></a>
+    <div class="modal__box">
+      <img src="./assets/images/icon-order-confirmed.svg" alt="" width="48" height="48">
+      <h2 class="modal__title" id="modal-title">Order Confirmed</h2>
+      <p class="modal__subtitle">We hope you enjoy your food!</p>
+
+      <div class="modal__summary">
+        <ul>
+          <li class="modal-item">
+            <img class="modal-item__thumb" src="./assets/images/image-tiramisu-thumbnail.jpg" alt="">
+            <div class="modal-item__info">
+              <h3 class="modal-item__name">Classic Tiramisu</h3>
+              <p class="modal-item__meta"><span class="modal-item__qty">1x</span> <span class="modal-item__unit">@ $5.50</span></p>
+            </div>
+            <span class="modal-item__total">$5.50</span>
+          </li>
+          <li class="modal-item">
+            <img class="modal-item__thumb" src="./assets/images/image-creme-brulee-thumbnail.jpg" alt="">
+            <div class="modal-item__info">
+              <h3 class="modal-item__name">Vanilla Bean Crème Brûlée</h3>
+              <p class="modal-item__meta"><span class="modal-item__qty">4x</span> <span class="modal-item__unit">@ $7.00</span></p>
+            </div>
+            <span class="modal-item__total">$28.00</span>
+          </li>
+          <li class="modal-item">
+            <img class="modal-item__thumb" src="./assets/images/image-panna-cotta-thumbnail.jpg" alt="">
+            <div class="modal-item__info">
+              <h3 class="modal-item__name">Vanilla Panna Cotta</h3>
+              <p class="modal-item__meta"><span class="modal-item__qty">2x</span> <span class="modal-item__unit">@ $6.50</span></p>
+            </div>
+            <span class="modal-item__total">$13.00</span>
+          </li>
+        </ul>
+        <div class="cart__total modal__total">
+          <span>Order Total</span>
+          <strong>$46.50</strong>
+        </div>
+      </div>
+
+      <a class="btn btn--primary" href="#">Start New Order</a>
+    </div>
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>
